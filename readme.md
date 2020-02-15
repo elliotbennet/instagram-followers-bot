@@ -11,17 +11,7 @@ The technique of requesting users is world renowned as the requested users are h
 - InstagramAPI (python3 module)
 
 ## How it works
-```mermaid
-sequenceDiagram
-Bot -> Instagram API: Authentication
-Bot ->> Instagram API: Get target user's followers
-Instagram API ->> Bot: [target-followers]
-loop Follow/Unfollow
-Bot ->> Instagram API: Request an account
-Bot -->> Instagram API: Unfollow an account
-Bot ->> Bot: 300s cooldown
-end
-```
+![Software Flowchart](./flowchart.svg)
 
 # How To Use
 
